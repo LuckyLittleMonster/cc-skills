@@ -2,24 +2,20 @@
 
 Claude Code skills collection for HPC development.
 
-## Usage
-
-Clone and symlink to `~/.claude/skills/`:
+## Setup (new machine)
 
 ```bash
-git clone https://github.com/LuckyLittleMonster/cc-skills.git ~/cc-skills
-
 # Back up existing skills if any
-mv ~/.claude/skills ~/.claude/skills.bak
+[ -d ~/.claude/skills ] && mv ~/.claude/skills ~/.claude/skills.bak
 
-# Symlink
-ln -sf ~/cc-skills ~/.claude/skills
+# Clone directly as ~/.claude/skills
+git clone https://github.com/LuckyLittleMonster/cc-skills.git ~/.claude/skills
 ```
 
 ## Update
 
 ```bash
-cd ~/cc-skills && git pull
+cd ~/.claude/skills && git pull
 ```
 
 ## Skills
